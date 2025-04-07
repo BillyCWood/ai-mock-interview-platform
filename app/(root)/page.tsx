@@ -2,9 +2,8 @@ import { Button } from "@/components/ui/button";
 import InterviewCard from "@/components/InterviewCard";
 import Link from "next/link";
 import Image from "next/image";
-import { dummyInterviews } from "@/constants";
-import { getCurrentUser, getInterviewByUserId, getLatestInterviews } from "@/lib/actions/auth.actions";
-import { Inter } from "next/font/google";
+import { getInterviewByUserId, getLatestInterviews } from "@/lib/actions/general.actions";
+import { getCurrentUser } from "@/lib/actions/auth.actions";
 
 export default async function Home() {
     
